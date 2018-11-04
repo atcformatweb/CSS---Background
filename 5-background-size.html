@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        #example1 {
+            border: 2px solid black;
+            padding: 25px;
+            background: url(background-image.jpeg);
+            background-repeat: no-repeat;
+            background-size: contain;
+                            /* 
+                            auto
+                            length
+                            cover
+                            contain
+                            initial
+                            inherit 
+                            */
+        }
+
+        #example2 {
+            border: 2px solid black;
+            padding: 25px;
+            background: url(background-image.jpeg);
+            background-repeat: no-repeat;
+            background-size: 300px 100px;
+                            /* 
+                            auto
+                            length
+                            cover
+                            contain
+                            initial
+                            inherit 
+                            */
+            
+        }
+        </style>
+    </head>
+    <body>
+
+    <h2>background-size: auto (par défaut):</h2>
+    <div id="example1">
+        <h2>Hello World</h2>
+        <p>L'image d'arrière-plan est affichée dans sa taille d'origine.</p>
+    </div>
+
+    <h2>background-size: 300px 100px:</h2>
+    <div id="example2">
+    <h2>Hello World</h2>
+    <p>Ici, l'image d'arrière-plan est définie sur 300 pixels de large et 100 pixels de haut.</p>
+    </div>
+
+    <p><strong>Note:</strong>Remarque: la propriété background-size n'est pas prise en charge dans Internet Explorer 8 et les versions antérieures.</p>
+
+    </body>
+</html>

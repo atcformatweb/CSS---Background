@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Background-clip CSS</title>
+        <style>  
+            #example1  {
+                border: 10px dotted black;
+                padding: 15px;
+                background: lightblue;
+                background-clip: border-box;    
+            }
+
+            #example2 {
+                border: 10px dotted black;
+                padding: 15px;
+                background: lightblue;
+                background-clip: padding-box;
+            }
+
+            #example3 {
+                border: 10px dotted black;
+                padding: 15px;
+                background: lightblue;
+                background-clip: content-box;
+            }
+        </style>
+    </head>
+    <body>
+       <h1>The background-clip Property</h1>
+
+        <p>La propriété background-clip définit l'étendue de l'arrière-plan dans un élément.</p>
+
+        <p>background-clip: border-box (par défaut):</p>
+        <div id="example1">
+            <p>Le fond s'étend derrière la frontière.</p>
+        </div>
+
+        <p>background-clip: padding-box:</p>
+        <div id="example2">
+            <p>L'arrière-plan s'étend jusqu'au bord intérieur de la bordure.</p>
+        </div>
+
+        <p>background-clip: content-box:</p>
+        <div id="example3">
+            <p>L'arrière-plan s'étend jusqu'au bord de la zone de contenu.</p>
+        </div>
+
+        <p><strong>Note:</strong> la propriété background-clip n'est pas prise en charge dans Internet Explorer 8 et les versions antérieures.</p>
+            
+    </body>
+</html>

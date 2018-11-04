@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Background-image CSS</title>
+
+        <style>
+            #example1 , #example2 , #example3  {
+                height:300px;
+            }
+
+            #example1 {
+                border: 10px double black;
+                padding: 25px;
+                background: url(small-pattern.gif);
+                background-repeat: no-repeat;
+                background-origin: padding-box;
+                                    /* 
+                                    padding-box
+                                    border-box
+                                    content-box
+                                    initial
+                                    inherit; 
+                                    */
+            }
+
+            #example2 {
+                border: 10px double black;
+                padding: 25px;
+                background: url(small-pattern.gif);
+                background-repeat: no-repeat;
+                background-origin: border-box;
+                                     /* 
+                                    padding-box
+                                    border-box
+                                    content-box
+                                    initial
+                                    inherit; 
+                                    */
+            }
+
+            #example3 {
+                border: 10px double black;
+                padding: 25px;
+                background: url(small-pattern.gif);
+                background-repeat: no-repeat;
+                background-origin: content-box;
+                                     /* 
+                                    padding-box
+                                    border-box
+                                    content-box
+                                    initial
+                                    inherit; 
+                                    */
+            }
+        </style>
+
+    </head>
+    <body>
+        
+        <h2>background-origin: padding-box (default):</h2>
+        <div id="example1">
+            <h2>Hello World</h2>
+            <p>L'image d'arrière-plan commence à partir du coin supérieur gauche du bord de remplissage.</p>
+        </div>
+
+        <h2>background-origin: border-box:</h2>
+            <div id="example2">
+            <h2>Hello World</h2>
+            <p>L'image d'arrière-plan commence dans le coin supérieur gauche de la bordure.</p>
+        </div>
+
+        <h2>background-origin: content-box:</h2>
+            <div id="example3">
+            <h2>Hello World</h2>
+            <p>L'image d'arrière-plan commence dans le coin supérieur gauche du contenu.</p>
+        </div>
+    </body>
+</html>
